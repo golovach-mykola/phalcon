@@ -69,7 +69,6 @@ class Users extends \Phalcon\Mvc\Model
      */
     public function initialize()
     {
-        $this->setSchema("wbc");
         $this->setSource("users");
     }
 
