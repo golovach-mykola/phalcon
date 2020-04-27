@@ -3,7 +3,6 @@
 use Phalcon\Db\Column;
 use Phalcon\Db\Index;
 use Phalcon\Db\Reference;
-use Phalcon\Security;
 use Phalcon\Migrations\Mvc\Model\Migration;
 
 /**
@@ -97,35 +96,7 @@ class UsersMigration_100 extends Migration
      */
     public function up()
     {
-        $security = new Security();
-        $password = $security->hash('1111');
-        self::$connection->insert('users',[
-            'admin@test.com',
-            'Jon',
-            'Doy',
-            'admin',
-             $password
-        ],[
-            'email',
-            'first_name',
-            'last_name',
-            'role',
-            'password',
-        ]);
 
-        self::$connection->insert('users',[
-            'manager@test.com',
-            'Met',
-            'Man',
-            'manager',
-             $password
-        ],[
-            'email',
-            'first_name',
-            'last_name',
-            'role',
-            'password',
-        ]);
     }
 
     /**

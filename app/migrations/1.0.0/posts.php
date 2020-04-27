@@ -63,7 +63,7 @@ class PostsMigration_100 extends Migration
                 ],
                 'options' => [
                     'table_type' => 'BASE TABLE',
-                    'auto_increment' => '14',
+                    'auto_increment' => '4',
                     'engine' => 'InnoDB',
                     'table_collation' => 'utf8mb4_general_ci'
                 ],
