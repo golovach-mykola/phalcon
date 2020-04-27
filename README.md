@@ -4,6 +4,7 @@ Installation:
 
 - clone repository.
 - add virtual host.
+- add cache folder in root directory.
 - run composer install.
 - set db settings in config.
 - run vendor/bin/phalcon-migrations run.
